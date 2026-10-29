@@ -9,6 +9,7 @@ export default function Nav() {
       </Link>
       <nav className="flex items-center gap-x-5 text-sm text-zinc-400">
         <Link href="/quick-commerce" className="transition-colors hover:text-zinc-100">Dark-store economics</Link>
+        <Link href="/tier-2-retail" className="transition-colors hover:text-zinc-100">Tier-2 retail</Link>
         <Link href="/sources" className="transition-colors hover:text-zinc-100">Sources</Link>
       </nav>
     </header>

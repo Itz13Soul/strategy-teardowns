@@ -7,7 +7,7 @@ import StoreLoader from "./StoreLoader";
 
 const inr = (n: number) => new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(Math.round(n));
 
-function Slider(props: { label: string; value: number; min: number; max: number; step: number; unit?: string; onChange: (v: number) => void; hint?: string }) {
+export function Slider(props: { label: string; value: number; min: number; max: number; step: number; unit?: string; onChange: (v: number) => void; hint?: string }) {
   return (
     <label className="block">
       <div className="flex items-baseline justify-between text-sm">

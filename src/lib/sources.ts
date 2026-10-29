@@ -32,3 +32,30 @@ export const SOURCES: Source[] = [
     kind: "secondary",
   },
 ];
+
+SOURCES.push(
+  {
+    id: "S6",
+    label: "V-Mart Retail, Q1 FY2027 investor presentation, filed with NSE 24 July 2026 (slides 4, 5, 7, 14, 17, 19, 20)",
+    url: "https://nsearchives.nseindia.com/corporate/VMART_24072026191417_FinalPresentation.pdf",
+    kind: "primary",
+  },
+  {
+    id: "S7",
+    label: "Sahi, V-Mart Retail Q2 FY27 business update",
+    url: "https://www.sahi.com/news/v-mart-retail-q2-fy27-revenue-up-18-to-953-crore-total-stores-at-613",
+    kind: "secondary",
+  },
+  {
+    id: "S8",
+    label: "Vishal Mega Mart, investor presentation May 2026, filed with NSE (slides 4, 5, 10)",
+    url: "https://nsearchives.nseindia.com/corporate/VMMP2024_14052026134121_Signed_Disclosure_Investor_Presentation_VMM_May_2026.pdf",
+    kind: "primary",
+  },
+  {
+    id: "S9",
+    label: "Investywise, Vishal Mega Mart Q2 FY27 earnings presentation summary",
+    url: "https://www.investywise.com/vishal-mega-mart-limited-earnings-presentation-for-q2fy27-and-h1fy27",
+    kind: "secondary",
+  },
+);

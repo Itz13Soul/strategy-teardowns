@@ -17,11 +17,11 @@ export default function Home() {
           <h2 className="mt-2 text-xl font-semibold">Quick-commerce dark-store unit economics</h2>
           <p className="mt-2 text-sm text-zinc-400">What a store must do per day to break even, built from Swiggy and Eternal Q2 FY27 disclosures.</p>
         </Link>
-        <div className="rounded-2xl border border-white/10 p-6 opacity-70">
-          <div className="text-xs uppercase tracking-wide text-zinc-500">Teardown 2, in progress</div>
+        <Link href="/tier-2-retail" className="rounded-2xl border border-teal-400/30 bg-teal-400/5 p-6 transition-colors hover:border-teal-300">
+          <div className="text-xs uppercase tracking-wide text-teal-300">Teardown 2, live</div>
           <h2 className="mt-2 text-xl font-semibold">Tier-2 retail store expansion payback</h2>
-          <p className="mt-2 text-sm text-zinc-400">Not published yet. It will use public filings and annual reports only.</p>
-        </div>
+          <p className="mt-2 text-sm text-zinc-400">What a value-retail store in a smaller city must earn to pay back, from V-Mart and Vishal Mega Mart filings.</p>
+        </Link>
       </section>
     </main>
   );
