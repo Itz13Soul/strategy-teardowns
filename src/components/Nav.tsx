@@ -12,7 +12,6 @@ export default function Nav() {
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-y-2 px-4 py-3">
         <Link href="/" className="font-display flex items-center gap-2.5 text-lg font-semibold">
           <span className="relative flex h-3 w-3 items-center justify-center">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-400/50 motion-reduce:animate-none" />
             <span className="relative inline-block h-2 w-2 rounded-full bg-lime-300" />
           </span>
           Strategy Teardowns
@@ -31,9 +30,6 @@ export default function Nav() {
               </Link>
             );
           })}
-          <Link href="/quick-commerce" className="ml-2 rounded-full bg-lime-300 px-4 py-1.5 font-semibold text-zinc-950 transition hover:bg-lime-200">
-            Open a model
-          </Link>
         </nav>
       </div>
     </header>
