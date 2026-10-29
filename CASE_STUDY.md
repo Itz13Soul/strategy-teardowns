@@ -1,13 +1,17 @@
-# Case study: Strategy Teardowns
+# Strategy Teardowns: case study
 
-**Problem.** Strategy and Founder's Office interviews test whether you can reason from public numbers to a decision. A memo shows that; a model the reader can change shows it better.
+**Problem.** Strategy takes on quick commerce are usually opinions. A reader cannot change an assumption and see what happens.
 
-**What I built.** A memo on quick-commerce dark-store economics and a calculator, both from public disclosures only, with every number cited and every assumption labelled.
+**What I built.** Teardown 1: dark-store unit economics for Blinkit and Instamart from Swiggy's and Eternal's Q2 FY27 disclosures. A one-page memo plus a calculator with sliders for orders per store per day, order value, variable margin, store fixed cost and capex. Outputs: profit per day and month, break-even orders and capex payback.
 
-**Key finding.** On Q2 FY27 reports, Instamart's contribution margin is -1.0% of GOV while adjusted EBITDA is -9.7%. Under the model, its stores need about 8% to 17% more orders per day to break even, depending on an unknown variable margin, so the larger gap sits between contribution and EBITDA.
+**Method.** Store profit per day = orders x order value x variable margin - store fixed cost. Neither company discloses variable margin or fixed cost, so the model calibrates: for any margin you assume, fixed cost is set so the model reproduces the reported contribution margin at the reported or derived orders per store. Sliders then show operating leverage from a reported starting point. All assumptions are labelled.
 
-**Decisions.** Calibrating fixed cost to the reported margin avoids inventing a cost number. Blinkit throughput is derived and cross-checked rather than assumed. Primary and secondary sources are marked.
+**Sources.** Five, listed on the Sources page. Instamart figures come from Swiggy's own shareholder letter. Blinkit figures come from press reports of Eternal's results, because Eternal's own letter could not be opened. Blinkit's 1,670 orders per store per day is derived from reported orders and store counts and cross-checks against net order value to within Rs 0.1 per order.
 
-**Limits.** One quarter. Different margin definitions. Blinkit figures are secondary.
+**Evidence.** Six tests: calibration reproduces each reported margin, break-even matches the closed form, payback is correct, and the Blinkit derivation matches the sources. No AI feature, so no model evaluation.
 
-**Next.** Teardown 2 on tier-2 retail store payback, from annual reports.
+**Limits.** One quarter, company-wide averages, margin and order value defined differently by the two companies. Not investment advice.
+
+**Next.** Teardown 2, and Blinkit figures from Eternal's own letter once available.
+
+Live: https://strategy-teardowns.vercel.app

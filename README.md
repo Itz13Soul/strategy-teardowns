@@ -32,3 +32,5 @@ npm run dev
 No environment variables are needed.
 
 Copyright (c) 2026 Divyansh Srivastava. All rights reserved. See LICENSE.
+
+Read the one-page [case study](CASE_STUDY.md).
