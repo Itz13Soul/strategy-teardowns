@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const inr = (n: number) => new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(Math.round(n));
 
 function Ref({ ids }: { ids: string }) {
-  return <sup className="ml-0.5 text-[10px] text-teal-300">[{ids}]</sup>;
+  return <sup className="ml-0.5 text-[10px] text-lime-300">[{ids}]</sup>;
 }
 
 export default function Page() {
@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <main className="mx-auto w-full max-w-5xl px-4 pb-16">
       <article className="rise max-w-3xl pt-8">
-        <div className="text-xs uppercase tracking-wide text-teal-300">Teardown 2 · Q1 and Q2 FY27 data · 29 October 2026</div>
+        <div className="text-xs uppercase tracking-wide text-lime-300">Teardown 2 · Q1 and Q2 FY27 data · 29 October 2026</div>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
           Tier-2 store expansion: sales per sq ft is not the lever, inventory is the weight
         </h1>
@@ -65,7 +65,7 @@ export default function Page() {
           </li>
           <li>
             <b>The margin you must believe.</b> For a three-year payback on the model, the store-level EBITDA margin must be:
-            <span className="mt-2 block font-mono text-sm text-teal-300">
+            <span className="mt-2 block font-mono text-sm text-lime-300">
               {rows.map((r) => `${r.m.toFixed(1)}% if fit-out costs Rs ${r.c.toFixed(1)} crore`).join(" · ")}
             </span>
             <span className="mt-1 block text-sm text-zinc-400">

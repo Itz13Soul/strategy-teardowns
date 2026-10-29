@@ -10,8 +10,8 @@ export default function Page() {
       <ul className="mt-6 space-y-3">
         {SOURCES.map((s) => (
           <li key={s.id} className="rounded-xl border border-white/10 p-4">
-            <div className="text-xs text-teal-300">{s.id} · {s.kind}</div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-zinc-200 underline decoration-white/20 hover:decoration-teal-300">{s.label}</a>
+            <div className="text-xs text-lime-300">{s.id} · {s.kind}</div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-zinc-200 underline decoration-white/20 hover:decoration-lime-300">{s.label}</a>
           </li>
         ))}
       </ul>

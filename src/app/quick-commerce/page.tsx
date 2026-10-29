@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const inr = (n: number) => new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(Math.round(n));
 
 function Ref({ ids }: { ids: string }) {
-  return <sup className="ml-0.5 text-[10px] text-teal-300">[{ids}]</sup>;
+  return <sup className="ml-0.5 text-[10px] text-lime-300">[{ids}]</sup>;
 }
 
 export default function Page() {
@@ -35,7 +35,7 @@ export default function Page() {
   return (
     <main className="mx-auto w-full max-w-5xl px-4 pb-16">
       <article className="rise max-w-3xl pt-8">
-        <div className="text-xs uppercase tracking-wide text-teal-300">Teardown 1 · Q2 FY27 data · 29 October 2026</div>
+        <div className="text-xs uppercase tracking-wide text-lime-300">Teardown 1 · Q2 FY27 data · 29 October 2026</div>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
           Quick-commerce dark stores: the store is nearly there, the company is not
         </h1>

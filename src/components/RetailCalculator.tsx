@@ -50,7 +50,7 @@ export default function RetailCalculator() {
         <Slider label="Net inventory funded by the store" value={s.inventoryCrore} min={0} max={3} step={0.05} unit=" crore" onChange={set("inventoryCrore")} hint="Starts at gross inventory per store, derived from S6. Supplier credit would lower it, and it is not disclosed." />
         <Slider label="Months to reach maturity" value={s.rampMonths} min={0} max={48} step={1} onChange={set("rampMonths")} hint="ASSUMPTION. Not disclosed." />
         <Slider label="Sales in month 1, % of mature" value={s.rampStartPct} min={20} max={100} step={5} unit="%" onChange={set("rampStartPct")} hint="ASSUMPTION. Not disclosed." />
-        <button onClick={() => setS(DEFAULTS)} className="text-xs text-teal-300 underline">Reset to reported starting points</button>
+        <button onClick={() => setS(DEFAULTS)} className="text-xs text-lime-300 underline">Reset to reported starting points</button>
       </div>
       <div className="space-y-4">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -61,8 +61,8 @@ export default function RetailCalculator() {
         </div>
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
           <div className="text-sm text-zinc-300">
-            Payback at maturity run-rate: <span className="font-mono text-teal-300">{o.simplePaybackYears === null ? "never" : `${o.simplePaybackYears.toFixed(1)} years`}</span>
-            {" · "}with ramp-up: <span className="font-mono text-teal-300">{o.rampPaybackMonths === null ? "beyond 10 years" : `${o.rampPaybackMonths} months`}</span>
+            Payback at maturity run-rate: <span className="font-mono text-lime-300">{o.simplePaybackYears === null ? "never" : `${o.simplePaybackYears.toFixed(1)} years`}</span>
+            {" · "}with ramp-up: <span className="font-mono text-lime-300">{o.rampPaybackMonths === null ? "beyond 10 years" : `${o.rampPaybackMonths} months`}</span>
           </div>
           <CashChart pts={o.cumulative} payback={o.rampPaybackMonths} />
         </div>
@@ -78,7 +78,7 @@ function Stat({ label, value, good }: { label: string; value: string; good: bool
   return (
     <div className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
       <div className="text-[11px] uppercase tracking-wide text-zinc-500">{label}</div>
-      <div className={`mt-1 font-mono text-sm ${good ? "text-teal-300" : "text-red-300"}`}>{value}</div>
+      <div className={`mt-1 font-mono text-sm ${good ? "text-lime-300" : "text-red-300"}`}>{value}</div>
     </div>
   );
 }

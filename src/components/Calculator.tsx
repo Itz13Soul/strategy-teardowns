@@ -12,7 +12,7 @@ export function Slider(props: { label: string; value: number; min: number; max: 
     <label className="block">
       <div className="flex items-baseline justify-between text-sm">
         <span className="text-zinc-300">{props.label}</span>
-        <span className="font-mono text-teal-300">
+        <span className="font-mono text-lime-300">
           {props.step < 1 ? props.value.toFixed(1) : inr(props.value)}
           {props.unit ?? ""}
         </span>
@@ -24,7 +24,7 @@ export function Slider(props: { label: string; value: number; min: number; max: 
         step={props.step}
         value={props.value}
         onChange={(e) => props.onChange(Number(e.target.value))}
-        className="mt-1 w-full accent-teal-400"
+        className="mt-1 w-full accent-lime-400"
       />
       {props.hint ? <div className="text-xs text-zinc-500">{props.hint}</div> : null}
     </label>
@@ -98,7 +98,7 @@ export default function Calculator() {
             <button
               key={a.key}
               onClick={() => pick(a.key)}
-              className={`rounded-full border px-3 py-1 text-sm transition-colors ${a.key === key ? "border-teal-400 bg-teal-400/10 text-teal-200" : "border-white/10 text-zinc-400 hover:text-zinc-100"}`}
+              className={`rounded-full border px-3 py-1 text-sm transition-colors ${a.key === key ? "border-lime-400 bg-lime-400/10 text-lime-200" : "border-white/10 text-zinc-400 hover:text-zinc-100"}`}
             >
               {a.name}
             </button>
@@ -118,7 +118,7 @@ export default function Calculator() {
           hint={fixedOverride === null ? "Calibrated: the value that reproduces the reported margin at reported orders." : "Overridden by you."}
         />
         {fixedOverride !== null ? (
-          <button onClick={() => setFixedOverride(null)} className="text-xs text-teal-300 underline">
+          <button onClick={() => setFixedOverride(null)} className="text-xs text-lime-300 underline">
             Reset fixed cost to the calibrated value
           </button>
         ) : null}
@@ -139,7 +139,7 @@ export default function Calculator() {
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
           <div className="text-sm text-zinc-300">
             Capex payback:{" "}
-            <span className="font-mono text-teal-300">{out.paybackMonths === null ? "never at these inputs" : `${out.paybackMonths.toFixed(1)} months`}</span>
+            <span className="font-mono text-lime-300">{out.paybackMonths === null ? "never at these inputs" : `${out.paybackMonths.toFixed(1)} months`}</span>
           </div>
           <Chart points={pts} reported={anchor.ordersPerDay} breakEven={out.breakEvenOrders} />
         </div>
@@ -155,7 +155,7 @@ function Stat({ label, value, good }: { label: string; value: string; good: bool
   return (
     <div className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
       <div className="text-[11px] uppercase tracking-wide text-zinc-500">{label}</div>
-      <div className={`mt-1 font-mono text-base ${good ? "text-teal-300" : "text-red-300"}`}>{value}</div>
+      <div className={`mt-1 font-mono text-base ${good ? "text-lime-300" : "text-red-300"}`}>{value}</div>
     </div>
   );
 }
