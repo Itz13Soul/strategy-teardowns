@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "../lib/track";
 import { useState } from "react";
 import { ANCHORS } from "../lib/anchors";
 import { curve, evaluate, impliedFixedCostPerDay } from "../lib/model";
@@ -24,6 +25,8 @@ export function Slider(props: { label: string; value: number; min: number; max: 
         step={props.step}
         value={props.value}
         onChange={(e) => props.onChange(Number(e.target.value))}
+        onPointerUp={() => track("slider_changed", { label: props.label })}
+        onKeyUp={() => track("slider_changed", { label: props.label })}
         className="mt-1 w-full accent-lime-400"
       />
       {props.hint ? <div className="text-xs text-zinc-500">{props.hint}</div> : null}
